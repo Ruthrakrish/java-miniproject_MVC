@@ -6,6 +6,7 @@ package mvc.views;
 
 import java.awt.Point;
 import javax.swing.JComponent;
+import javax.swing.JTextField;
 
 /**
  *
@@ -39,6 +40,12 @@ public class DetailViewPanel extends javax.swing.JPanel {
         return txt_email;
         
     }
+      public javax.swing.JTextField getjTextField()
+    {
+        
+        return jTextField();
+        
+    }
       public void setName(String name)
       {
           txt_name.setText(name);
@@ -47,6 +54,14 @@ public class DetailViewPanel extends javax.swing.JPanel {
       {
           txt_mobileno.setText(mobile);
       }
+
+    public JTextField getjTextField1() {
+        return jTextField1;
+    }
+
+    public void setjTextField1(JTextField jTextField1) {
+        this.jTextField1 = jTextField1;
+    }
         public void seteMail(String email)
       {
           txt_email.setText(email);
@@ -54,7 +69,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
       
            public void setAddress(String address)
                    {
-                       txt_address.setText(address);
+                       jTextField1.setText(address);
                    }
         public JComponent getComponent() 
         {
@@ -104,7 +119,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
         txt_address.setText("Address");
         txt_address.setName("txt_address"); // NOI18N
 
-        jTextField1.setName("txtaddress"); // NOI18N
+        jTextField1.setName("txt_address"); // NOI18N
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
@@ -167,4 +182,8 @@ public class DetailViewPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txt_mobileno;
     private javax.swing.JTextField txt_name;
     // End of variables declaration//GEN-END:variables
+
+    private JTextField jTextField() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
