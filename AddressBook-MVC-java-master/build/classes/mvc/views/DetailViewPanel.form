@@ -39,7 +39,7 @@
                   <Component id="txt_email" pref="131" max="32767" attributes="0"/>
                   <Component id="jTextField1" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="34" max="32767" attributes="0"/>
+              <EmptySpace pref="28" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -91,7 +91,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="99" green="99" red="ff" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Mobile Number"/>
+        <Property name="text" type="java.lang.String" value="Mobile Number*"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
@@ -125,7 +125,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="txt_address">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Address"/>
+        <Property name="text" type="java.lang.String" value="Address*"/>
         <Property name="name" type="java.lang.String" value="txt_address" noResource="true"/>
       </Properties>
     </Component>

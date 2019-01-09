@@ -103,7 +103,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 153, 153));
-        jLabel2.setText("Mobile Number");
+        jLabel2.setText("Mobile Number*");
 
         jLabel3.setBackground(new java.awt.Color(102, 255, 255));
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
@@ -116,7 +116,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
 
         txt_email.setName("txt_email"); // NOI18N
 
-        txt_address.setText("Address");
+        txt_address.setText("Address*");
         txt_address.setName("txt_address"); // NOI18N
 
         jTextField1.setName("txt_address"); // NOI18N
@@ -143,7 +143,7 @@ public class DetailViewPanel extends javax.swing.JPanel {
                     .addComponent(txt_mobileno)
                     .addComponent(txt_email, javax.swing.GroupLayout.DEFAULT_SIZE, 131, Short.MAX_VALUE)
                     .addComponent(jTextField1))
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

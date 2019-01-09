@@ -102,7 +102,7 @@ public class AddressBookController {
                     view.getMainGUIFrame().setVisible(true);
                 }   
             }
-            
+           
         };
          dialog.getSubmitButton().addActionListener(choiceListener);
          dialog.getcancelButton().addActionListener(choiceListener);  
@@ -146,13 +146,21 @@ public class AddressBookController {
         boolean valid = false;
         String name = contactDetailsPanel.getNameField().getText();
         String mobile = contactDetailsPanel.getMobileField().getText();
-        if (name==null||name.equals("")||(mobile==null||mobile.equals("")))
-            JOptionPane.showMessageDialog(new JFrame(), "Fields Marked as * are Mandatory","Inane error", JOptionPane.ERROR_MESSAGE);
-        else 
-            valid = true;
-        return valid;
+        String address = contactDetailsPanel.getjTextField1().getText();
+        if (name==null||name.equals(""))
+            JOptionPane.showMessageDialog(new JFrame(), "enter the name","Inane error", JOptionPane.ERROR_MESSAGE);
+     else if(mobile==null||mobile.equals(""))
+         JOptionPane.showMessageDialog(new JFrame(), "enter the mobile","Inane error", JOptionPane.ERROR_MESSAGE);
+      else if(address==null||address.equals(""))
+      JOptionPane.showMessageDialog(new JFrame(), "enter the address","Inane error", JOptionPane.ERROR_MESSAGE);
+
+else 
+valid= true;
+return valid;
+}
+
                
-    }
+    
      
     private void openEdit(){
         dialog =  new ContactDialog("Update Entries");

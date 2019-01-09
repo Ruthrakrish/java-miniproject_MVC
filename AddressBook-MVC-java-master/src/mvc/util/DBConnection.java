@@ -18,7 +18,7 @@ public class DBConnection {
      private static DBConnection dbConnect = new DBConnection();
      Connection con=null ;
      private DBConnection(){}
-     public static DBConnection getInstance(){
+     public static DBConnection getInstance(){                                                     
          return dbConnect;
      }
       public Connection getConnect(){
